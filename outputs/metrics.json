@@ -1,0 +1,113 @@
+{
+  "best_model": "Logistic Regression",
+  "results": {
+    "Logistic Regression": {
+      "cv_roc_auc": 0.7139,
+      "test_roc_auc": 0.7359,
+      "precision_rejected": 0.6288,
+      "recall_rejected": 0.3582,
+      "f1_rejected": 0.4564,
+      "precision_approved": 0.8118,
+      "recall_approved": 0.929,
+      "f1_approved": 0.8665,
+      "confusion_matrix": [
+        [
+          144,
+          258
+        ],
+        [
+          85,
+          1113
+        ]
+      ],
+      "report": "              precision    recall  f1-score   support\n\n    Rejected       0.63      0.36      0.46       402\n    Approved       0.81      0.93      0.87      1198\n\n    accuracy                           0.79      1600\n   macro avg       0.72      0.64      0.66      1600\nweighted avg       0.77      0.79      0.76      1600\n"
+    },
+    "Decision Tree": {
+      "cv_roc_auc": 0.6909,
+      "test_roc_auc": 0.7152,
+      "precision_rejected": 0.6119,
+      "recall_rejected": 0.3333,
+      "f1_rejected": 0.4316,
+      "precision_approved": 0.8059,
+      "recall_approved": 0.929,
+      "f1_approved": 0.8631,
+      "confusion_matrix": [
+        [
+          134,
+          268
+        ],
+        [
+          85,
+          1113
+        ]
+      ],
+      "report": "              precision    recall  f1-score   support\n\n    Rejected       0.61      0.33      0.43       402\n    Approved       0.81      0.93      0.86      1198\n\n    accuracy                           0.78      1600\n   macro avg       0.71      0.63      0.65      1600\nweighted avg       0.76      0.78      0.75      1600\n"
+    },
+    "Random Forest": {
+      "cv_roc_auc": 0.6965,
+      "test_roc_auc": 0.7085,
+      "precision_rejected": 0.587,
+      "recall_rejected": 0.2687,
+      "f1_rejected": 0.3686,
+      "precision_approved": 0.7924,
+      "recall_approved": 0.9366,
+      "f1_approved": 0.8585,
+      "confusion_matrix": [
+        [
+          108,
+          294
+        ],
+        [
+          76,
+          1122
+        ]
+      ],
+      "report": "              precision    recall  f1-score   support\n\n    Rejected       0.59      0.27      0.37       402\n    Approved       0.79      0.94      0.86      1198\n\n    accuracy                           0.77      1600\n   macro avg       0.69      0.60      0.61      1600\nweighted avg       0.74      0.77      0.74      1600\n"
+    },
+    "XGBoost": {
+      "cv_roc_auc": 0.7,
+      "test_roc_auc": 0.7161,
+      "precision_rejected": 0.5859,
+      "recall_rejected": 0.2886,
+      "f1_rejected": 0.3867,
+      "precision_approved": 0.796,
+      "recall_approved": 0.9316,
+      "f1_approved": 0.8585,
+      "confusion_matrix": [
+        [
+          116,
+          286
+        ],
+        [
+          82,
+          1116
+        ]
+      ],
+      "report": "              precision    recall  f1-score   support\n\n    Rejected       0.59      0.29      0.39       402\n    Approved       0.80      0.93      0.86      1198\n\n    accuracy                           0.77      1600\n   macro avg       0.69      0.61      0.62      1600\nweighted avg       0.74      0.77      0.74      1600\n"
+    }
+  },
+  "feature_importance": {
+    "Credit history": 100.0,
+    "Credit missing": 25.4,
+    "Applicant income": 16.4,
+    "Self employed": 16.2,
+    "Property area": 13.7,
+    "Education": 10.7,
+    "Co-applicant income": 8.6,
+    "Loan amount": 7.3,
+    "Loan term": 2.2
+  },
+  "reference": {
+    "ApplicantIncome": 37783.0,
+    "CoapplicantIncome": 7223.0,
+    "LoanAmount": 145.0,
+    "Loan_Amount_Term": 360.0,
+    "Credit_History": 1.0,
+    "Education": "Graduate",
+    "Self_Employed": "No",
+    "Property_Area": "Semiurban"
+  },
+  "n_rows": 8000,
+  "n_train": 6400,
+  "n_test": 1600
+}
